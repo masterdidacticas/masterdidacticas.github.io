@@ -1,73 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-	* {
-		margin:0px;
-		padding:0px;
-	}
-	
-	#header {
-		position: fixed;
-		top: 0;
-		width: 100%;
-		background-color: #fff;
-		z-index: 1000;
-		box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-	}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+}
 
-	.nav {
-		display: flex;
-		justify-content: center;
-		list-style: none;
-		padding: 20px;
-		margin: 0;
-		background-color: #eee; 
-	}
-	
-	#content {
-		margin: 120px auto 50px;
-		width: 80%;
-		text-align: center;
-		padding: 20px;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-	
-	ul, ol {
-		list-style:none;
-	}
-	
-	.nav > li {
-		float:left;
-	}
-	
-	.nav li a {
-		background-color:#000;
-		color:#fff;
-		text-decoration:none;
-		padding:10px 12px;
-		display:block;
-	}
-	
-	.nav li a:hover {
-		background-color:#434343;
-	}
-	
-	.nav li ul {
-		display:none;
-		position:absolute;
-		min-width:140px;
-	}
-	
-	.nav li:hover > ul {
-		display:block;
-	}
-	
-	.nav li ul li {
-		position:relative;
-	}
-	
-	.nav li ul li ul {
-		right:-140px;
-		top:0px;
-	}
-			
+#header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #1e90ff;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+}
+
+.nav > li {
+    position: relative;
+}
+
+.nav li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 25px;
+    font-size: 18px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.nav li a:hover {
+    background-color: #4169e1;
+}
+
+.nav li ul {
+    display: none;
+    position: absolute;
+    background-color: #1e90ff;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    top: 100%;
+    left: 0;
+    min-width: 160px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav li:hover > ul {
+    display: block;
+}
+
+.nav li ul li a {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+#content {
+    margin: 120px auto 50px;
+    width: 80%;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
