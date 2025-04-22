@@ -1,0 +1,95 @@
+/* Estilo para el menú de navegación */
+header {
+  background-color: #ffffff;
+  padding: 10px 0;
+}
+
+nav {
+  text-align: center;
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  display: inline-block;
+  position: relative;
+  margin-right: 20px;
+  width: 160px; /* Tamaño fijo para todos los cuadros */
+  border: 2px solid #00BFFF; /* Borde azul celeste */
+  border-radius: 10px; /* Bordes redondeados */
+  background-color: white; /* Fondo blanco */
+  transition: all 0.3s ease; /* Transición suave */
+}
+
+.menu li a {
+  color: #333; /* Color del texto */
+  text-decoration: none;
+  font-size: 16px;
+  padding: 15px; /* Ajusta el padding para que sea más consistente */
+  display: block;
+  text-align: center; /* Asegura que el texto esté centrado */
+  transition: border-color 0.3s, background-color 0.3s;
+  background-color: white; /* Fondo blanco */
+  border: 2px solid transparent; /* Recuadro sin color inicialmente */
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Estilo cuando el cursor pasa sobre una opción */
+.menu li a:hover {
+  background-color: #00BFFF; /* Azul celeste para el submenú */
+  color: white; /* Color blanco del texto en el submenú */
+}
+
+/* Estilos para el submenú (desplegable hacia abajo) */
+.submenu-content {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 100%; /* Coloca el submenú directamente debajo del ítem principal */
+  left: 0;
+  background-color: white; /* Fondo blanco para el submenú */
+  display: none;
+  width: 200px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Sombra para darle profundidad */
+  border-radius: 5px;
+  border: 2px solid #00BFFF; /* Borde azul celeste para el submenú */
+}
+
+.submenu-content li {
+  display: block; /* Asegura que cada ítem esté en una nueva línea */
+}
+
+.submenu-content li a {
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
+
+/* Estilo cuando el cursor pasa sobre una opción del submenú */
+.submenu-content li a:hover {
+  background-color: #00BFFF; /* Azul celeste para el submenú */
+  color: white; /* Color blanco del texto en el submenú */
+}
+
+/* Mostrar el submenú al pasar el ratón sobre el ítem principal */
+.submenu:hover .submenu-content {
+  display: block;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  font-size: 36px;
+}
+
+.highlight {
+  color: #e94e77;
+}

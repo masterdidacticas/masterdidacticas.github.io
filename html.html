@@ -1,14 +1,80 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¿Qué es HTML?</title>
+  <link rel="stylesheet" href="html.css">
 </head>
 <body>
-    <section>
-        <h2>HTML</h2>
-        <p>Contenido sobre HTML.</p>
-    </section>
+  <header>
+    <h1>¿Qué es <span class="highlight">&lt;HTML&gt;</span>?</h1>
+  </header>
+
+  <section class="intro">
+    <p>HTML (HyperText Markup Language) es el lenguaje que se usa para estructurar páginas web.</p>
+  </section>
+
+  <section class="video">
+    <iframe src="https://www.youtube.com/embed/ok-plXXHlWw" frameborder="0" allowfullscreen></iframe>
+  </section>
+
+  <section class="descripcion">
+    <h2>¿Para qué sirve?</h2>
+    <p>
+      Gracias a HTML puedes crear diferentes bloques que componen una página web como encabezados, párrafos, imágenes, enlaces y más.
+      Se utiliza junto con CSS para el diseño visual y con JavaScript para funcionalidades interactivas.
+    </p>
+  </section>
+
+  <section class="tabla">
+    <h2>Estructura y elementos de HTML</h2>
+    <div class="tabla-container">
+      <div class="columna">
+        <h3>Estructura HTML básica</h3>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Mi Página&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hola mundo&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+      </div>
+      <div class="columna">
+        <h3>Elementos esenciales</h3>
+        <ul>
+          <li><strong>Encabezados:</strong> <code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code></li>
+          <li><strong>Párrafos:</strong> <code>&lt;p&gt;</code></li>
+          <li><strong>Imágenes:</strong> <code>&lt;img&gt;</code></li>
+          <li><strong>Listas:</strong> <code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, <code>&lt;li&gt;</code></li>
+          <li><strong>Enlaces:</strong> <code>&lt;a&gt;</code></li>
+          <li><strong>Tablas:</strong> <code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;td&gt;</code></li>
+          <li><strong>Formularios:</strong> <code>&lt;form&gt;</code>, <code>&lt;input&gt;</code></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="links-imagenes">
+    <div class="link-box">
+      <a href="css.html">
+        <img src="css.png" alt="Aprende CSS">
+        <p>Aprende más sobre CSS</p>
+      </a>
+    </div>
+    <div class="link-box">
+      <a href="javascript.html">
+        <img src="javascript.png"Aprende JavaScript">
+        <p>Aprende más sobre JavaScript</p>
+      </a>
+    </div>
+  </section>
+  
+  <footer>
+    <p>🌐 Sigue aprendiendo más sobre HTML, CSS y JavaScript.</p>
+  </footer>
 </body>
 </html>
