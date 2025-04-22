@@ -2,13 +2,323 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Autoevaluaci�n</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>FORMULARIO DE AUTOEVALUACIÓN</title>
+	<link rel="stylesheet" href="css/autoevaluacion.css">
 </head>
-<body>
-    <section>
-        <h2>Autoevaluaci�n</h2>
-        <p>Contenido sobre autoevaluaci�n.</p>
+    <body>
+        <h2 class="titulo">Pon a prueba<br>tus conocimientos...</h2>
+        
+        <form id="formularioAutoevaluacion">
+
+            <!-- HTML -->
+         
+            <div class="pregunta">
+                <h4>1. ¿Qué es el atributo alt en una etiqueta &lt;img&gt; y cuál es su función?</h4>
+                <textarea id="q1" rows="3" required></textarea>
+            </div><br>
+        
+            <div class="pregunta">
+                <h4>2. ¿Cuál es la etiqueta correcta para crear una lista desordenada en HTML?</h4>
+                <input type="radio" name="q2" value="ol"> &lt;ol&gt;<br>
+                <input type="radio" name="q2" value="ul"> &lt;ul&gt;<br>
+                <input type="radio" name="q2" value="dl"> &lt;dl&gt;<br>
+                <input type="radio" name="q2" value="li"> &lt;li&gt;<br>
+            </div><br>
+        
+            <div class="pregunta">
+                <h4>3. ¿Qué etiqueta HTML se usa para incrustar un archivo de audio en una página web?</h4>
+                <select id="q3" required>
+                    <option value="">Seleccione una opción</option>
+                    <option value="audio">&lt;audio&gt;</option>
+                    <option value="video">&lt;video&gt;</option>
+                    <option value="embed">&lt;embed&gt;</option>
+                    <option value="source">&lt;source&gt;</option>
+                </select>
+            </div><br>
+        
+            <div class="pregunta">
+                <h4>4. ¿Cuáles de las siguientes etiquetas se utilizan para crear formularios en HTML?</h4>
+                <input type="checkbox" name="q4" value="form"> &lt;form&gt;<br>
+                <input type="checkbox" name="q4" value="input"> &lt;input&gt;<br>
+                <input type="checkbox" name="q4" value="button"> &lt;button&gt;<br>
+                <input type="checkbox" name="q4" value="iframe"> &lt;iframe&gt;<br>
+            </div><br>
+        
+            <div class="pregunta">
+                <h4>5. ¿Cuál es el propósito del atributo action en una etiqueta &lt;form&gt;?</h4>
+                <select id="q5" required>
+                    <option value="">Seleccione una opción</option>
+                    <option value="url">Especificar la URL a la que se enviarán los datos del formulario.</option>
+                    <option value="tipo">Determinar el tipo de formulario (texto, número, etc.).</option>
+                    <option value="estilo">Identificar el estilo del formulario.</option>
+                    <option value="cantidad">Configurar la cantidad de datos que se enviarán.</option>
+                </select>
+            </div><br>
+        
+            <!-- CSS -->
+        
+            <div class="pregunta">
+                <h4>6. Explica la diferencia entre padding y margin en CSS.</h4>
+                <textarea id="q6" rows="3" required></textarea>
+            </div><br>
+        
+            <div class="pregunta">
+                <h4>7. ¿Qué propiedad CSS se utiliza para cambiar el color de fondo de un elemento?</h4>
+                <input type="radio" name="q7" value="color"> color<br>
+                <input type="radio" name="q7" value="background-color"> background-color<br>
+                <input type="radio" name="q7" value="border-color"> border-color<br>
+                <input type="radio" name="q7" value="text-color"> text-color<br>
+            </div><br>
+        
+            <div class="pregunta">
+                <h4>8. ¿Cómo se declara un color en formato hexadecimal en CSS?</h4>
+                <select id="q8" required>
+                    <option value="">Seleccione una opción</option>
+                    <option value="#RGB">#RGB</option>
+                    <option value="#RRGGBB">#RRGGBB</option>
+                    <option value="rgb">rgb(R, G, B)</option>
+                    <option value="color">color(RGBA)</option>
+                </select>
+            </div><br>
+        
+            <div class="pregunta">
+                <h4>9. ¿Cuáles de las siguientes propiedades CSS se usan para posicionar un elemento?</h4>
+                <input type="checkbox" name="q9" value="position"> position<br>
+                <input type="checkbox" name="q9" value="top"> top<br>
+                <input type="checkbox" name="q9" value="left"> left<br>
+                <input type="checkbox" name="q9" value="align-items"> align-items<br>
+            </div><br>
+        
+            <div class="pregunta">
+                <h4>10. ¿Qué unidad de medida en CSS es relativa al tamaño de la fuente del elemento?</h4>
+                <select id="q10" required>
+                    <option value="">Seleccione una opción</option>
+                    <option value="px">px</option>
+                    <option value="em">em</option>
+                    <option value="rem">rem</option>
+                    <option value="pt">pt</option>
+                </select>
+            </div><br>
+        
+            <!-- JavaScript -->
+        
+            <div class="pregunta">
+                <h4>11. ¿Qué es una variable en JavaScript y cómo se declara?</h4>
+                <textarea id="q11" rows="3" required></textarea>
+            </div><br>
+        
+            <div class="pregunta">
+                <h4>12. ¿Cuál de las siguientes funciones se utiliza para agregar un evento a un elemento en JavaScript?</h4>
+                <input type="radio" name="q12" value="addEventListener"> addEventListener()<br>
+                <input type="radio" name="q12" value="attachEvent"> attachEvent()<br>
+                <input type="radio" name="q12" value="setEvent"> setEvent()<br>
+                <input type="radio" name="q12" value="listenEvent"> listenEvent()<br>
+            </div><br>
+        
+            <div class="pregunta">
+                <h4>13. ¿Qué tipo de datos representa true o false en JavaScript?</h4>
+                <select id="q13" required>
+                    <option value="">Seleccione una opción</option>
+                    <option value="String">String</option>
+                    <option value="Boolean">Boolean</option>
+                    <option value="Number">Number</option>
+                    <option value="Object">Object</option>
+                </select>
+            </div><br>
+        
+            <div class="pregunta">
+                <h4>14. ¿Cuáles de las siguientes opciones son métodos para manipular el DOM en JavaScript?</h4>
+                <input type="checkbox" name="q14" value="getElementById"> getElementById()<br>
+                <input type="checkbox" name="q14" value="createElement"> createElement()<br>
+                <input type="checkbox" name="q14" value="setAttribute"> setAttribute()<br>
+                <input type="checkbox" name="q14" value="setElement"> setElement()<br>
+            </div><br>
+        
+            <div class="pregunta">
+                <h4>15. ¿Cómo se declara una función en JavaScript?</h4>
+                <select id="q15" required>
+                    <option value="">Seleccione una opción</option>
+                    <option value="sinParentesis">function myFunction { }</option>
+                    <option value="correcto">function myFunction() { }</option>
+                    <option value="sinFunction">myFunction() { }</option>
+                    <option value="objeto">myFunction: function() { }</option>
+                </select>
+            </div><br>
+        
+            <!-- Metodologias -->
+        
+            <div class="pregunta">
+                <h4>16. Explica brevemente qué es la metodología de "Aula Invertida" y cómo se aplica en la enseñanza.</h4>
+                <textarea id="q16" rows="3" required></textarea>
+            </div><br>
+        
+            <div class="pregunta">
+                <h4>17. ¿Cuál es el objetivo principal de la metodología "Puzzle de Aronson"?</h4>
+                <input type="radio" name="q17" value="competencia"> Fomentar la competencia entre los estudiantes.<br>
+                <input type="radio" name="q17" value="colaborativo"> Mejorar el aprendizaje colaborativo.<br>
+                <input type="radio" name="q17" value="memorizacion"> Aumentar el tiempo dedicado a la memorización.<br>
+                <input type="radio" name="q17" value="conferencias"> Facilitar la enseñanza a través de conferencias.<br>
+            </div><br>
+        
+            <div class="pregunta">
+                <h4>18. En la metodología "Aula Invertida", ¿qué tipo de actividades suelen realizar los estudiantes fuera del aula?</h4>
+                <select id="q18" required>
+                    <option value="">Seleccione una opción</option>
+                    <option value="videos">Ver videos explicativos.</option>
+                    <option value="ejercicios">Resolver ejercicios prácticos en clase.</option>
+                    <option value="evaluaciones">Realizar evaluaciones escritas.</option>
+                    <option value="discusiones">Participar en discusiones en grupo.</option>
+                </select>
+            </div><br>
+        
+            <div class="pregunta">
+                <h4>19. ¿Cuáles de los siguientes beneficios están asociados con la metodología "Puzzle de Aronson"?</h4>
+                <input type="checkbox" name="q19" value="cooperacion"> Mejora la cooperación entre estudiantes.<br>
+                <input type="checkbox" name="q19" value="individual"> Fomenta el aprendizaje individual.<br>
+                <input type="checkbox" name="q19" value="habilidades"> Desarrolla habilidades sociales y de comunicación.<br>
+                <input type="checkbox" name="q19" value="competencia"> Estimula la competencia individual.<br>
+            </div><br>
+        
+            <div class="pregunta">
+                <h4>20. ¿En qué tipo de actividades se puede aplicar la metodología "Aula Invertida"?</h4>
+                <select id="q20" required>
+                    <option value="">Seleccione una opción</option>
+                    <option value="teoria">Solo en clases de teoría.</option>
+                    <option value="practicas">Solo en actividades prácticas.</option>
+                    <option value="cualquier">En cualquier tipo de actividad educativa que se pueda separar entre trabajo autónomo y trabajo grupal.</option>
+                    <option value="online">Solo en la enseñanza en línea.</option>
+                </select>
+            </div>
+            <br><br>
+        
+            <button type="submit">Enviar Autoevaluación</button>
+        </form>
+
+        <script>
+            document.getElementById('formularioAutoevaluacion').addEventListener('submit', function(e) {
+                e.preventDefault();
+            
+                let resultados = [];
+                
+                // Preguntas de respuesta libre (revisar manual o palabras clave)
+                let q1 = document.getElementById('q1').value.toLowerCase();
+                if (q1.includes('texto alternativo') || q1.includes('describir') || q1.includes('imagen')) {
+                    resultados.push('Pregunta 1: Correcta ✅');
+                } else {
+                    resultados.push('Pregunta 1: Incorrecta ❌ (Debe mencionar que es texto alternativo o su función de accesibilidad)');
+                }
+            
+                // Pregunta 2
+                let q2 = document.querySelector('input[name="q2"]:checked');
+                resultados.push(q2 && q2.value === 'ul' ? 'Pregunta 2: Correcta ✅' : 'Pregunta 2: Incorrecta ❌');
+            
+                // Pregunta 3
+                let q3 = document.getElementById('q3').value;
+                resultados.push(q3 === 'audio' ? 'Pregunta 3: Correcta ✅' : 'Pregunta 3: Incorrecta ❌');
+            
+                // Pregunta 4
+                let q4 = Array.from(document.querySelectorAll('input[name="q4"]:checked')).map(e => e.value);
+                let correctas4 = ['form', 'input', 'button'];
+                resultados.push(
+                    q4.length === 3 && correctas4.every(val => q4.includes(val)) && !q4.includes('iframe')
+                    ? 'Pregunta 4: Correcta ✅' : 'Pregunta 4: Incorrecta ❌'
+                );
+            
+                // Pregunta 5
+                let q5 = document.getElementById('q5').value;
+                resultados.push(q5 === 'url' ? 'Pregunta 5: Correcta ✅' : 'Pregunta 5: Incorrecta ❌');
+            
+                // Pregunta 6
+                let q6 = document.getElementById('q6').value.toLowerCase();
+                if (q6.includes('espacio interno') && q6.includes('espacio externo')) {
+                    resultados.push('Pregunta 6: Correcta ✅');
+                } else {
+                    resultados.push('Pregunta 6: Incorrecta ❌ (Debe diferenciar entre espacio interno -padding- y externo -margin-)');
+                }
+            
+                // Pregunta 7
+                let q7 = document.querySelector('input[name="q7"]:checked');
+                resultados.push(q7 && q7.value === 'background-color' ? 'Pregunta 7: Correcta ✅' : 'Pregunta 7: Incorrecta ❌');
+            
+                // Pregunta 8
+                let q8 = document.getElementById('q8').value;
+                resultados.push(q8 === '#RRGGBB' ? 'Pregunta 8: Correcta ✅' : 'Pregunta 8: Incorrecta ❌');
+            
+                // Pregunta 9
+                let q9 = Array.from(document.querySelectorAll('input[name="q9"]:checked')).map(e => e.value);
+                let correctas9 = ['position', 'top', 'left'];
+                resultados.push(
+                    q9.length === 3 && correctas9.every(val => q9.includes(val)) && !q9.includes('align-items')
+                    ? 'Pregunta 9: Correcta ✅' : 'Pregunta 9: Incorrecta ❌'
+                );
+            
+                // Pregunta 10
+                let q10 = document.getElementById('q10').value;
+                resultados.push(q10 === 'em' ? 'Pregunta 10: Correcta ✅' : 'Pregunta 10: Incorrecta ❌');
+            
+                // Pregunta 11
+                let q11 = document.getElementById('q11').value.toLowerCase();
+                if (q11.includes('let') || q11.includes('const') || q11.includes('var')) {
+                    resultados.push('Pregunta 11: Correcta ✅');
+                } else {
+                    resultados.push('Pregunta 11: Incorrecta ❌ (Debe mencionar let, const o var)');
+                }
+            
+                // Pregunta 12
+                let q12 = document.querySelector('input[name="q12"]:checked');
+                resultados.push(q12 && q12.value === 'addEventListener' ? 'Pregunta 12: Correcta ✅' : 'Pregunta 12: Incorrecta ❌');
+            
+                // Pregunta 13
+                let q13 = document.getElementById('q13').value;
+                resultados.push(q13 === 'Boolean' ? 'Pregunta 13: Correcta ✅' : 'Pregunta 13: Incorrecta ❌');
+            
+                // Pregunta 14
+                let q14 = Array.from(document.querySelectorAll('input[name="q14"]:checked')).map(e => e.value);
+                let correctas14 = ['getElementById', 'createElement', 'setAttribute'];
+                resultados.push(
+                    q14.length === 3 && correctas14.every(val => q14.includes(val)) && !q14.includes('setElement')
+                    ? 'Pregunta 14: Correcta ✅' : 'Pregunta 14: Incorrecta ❌'
+                );
+            
+                // Pregunta 15
+                let q15 = document.getElementById('q15').value;
+                resultados.push(q15 === 'correcto' ? 'Pregunta 15: Correcta ✅' : 'Pregunta 15: Incorrecta ❌');
+            
+                // Pregunta 16
+                let q16 = document.getElementById('q16').value.toLowerCase();
+                if (q16.includes('videos') && (q16.includes('clase') || q16.includes('tiempo'))) {
+                    resultados.push('Pregunta 16: Correcta ✅');
+                } else {
+                    resultados.push('Pregunta 16: Incorrecta ❌ (Debe mencionar que la teoría se revisa fuera de clase)');
+                }
+            
+                // Pregunta 17
+                let q17 = document.querySelector('input[name="q17"]:checked');
+                resultados.push(q17 && q17.value === 'colaborativo' ? 'Pregunta 17: Correcta ✅' : 'Pregunta 17: Incorrecta ❌');
+            
+                // Pregunta 18
+                let q18 = document.getElementById('q18').value;
+                resultados.push(q18 === 'videos' ? 'Pregunta 18: Correcta ✅' : 'Pregunta 18: Incorrecta ❌');
+            
+                // Pregunta 19
+                let q19 = Array.from(document.querySelectorAll('input[name="q19"]:checked')).map(e => e.value);
+                let correctas19 = ['cooperacion', 'habilidades'];
+                resultados.push(
+                    q19.length === 2 && correctas19.every(val => q19.includes(val)) && !q19.includes('individual') && !q19.includes('competencia')
+                    ? 'Pregunta 19: Correcta ✅' : 'Pregunta 19: Incorrecta ❌'
+                );
+            
+                // Pregunta 20
+                let q20 = document.getElementById('q20').value;
+                resultados.push(q20 === 'cualquier' ? 'Pregunta 20: Correcta ✅' : 'Pregunta 20: Incorrecta ❌');
+            
+                // Mostrar resultados
+                alert(resultados.join('\n'));
+            });
+            </script>
+
+ 
     </section>
 </body>
 </html>
