@@ -1,3 +1,6 @@
+
+// Función que carga contenido dinámicamente en la página
+
 function loadContent(page) {
     fetch(page)
         .then(response => {
@@ -7,6 +10,7 @@ function loadContent(page) {
             return response.text();
         })
         .then(data => {
+			// Inserta el contenido cargado dentro del div con id="content"
             document.getElementById('content').innerHTML = data;
         })
         .catch(error => {
@@ -15,6 +19,9 @@ function loadContent(page) {
 }
 
 // Cargar la página de inicio por defecto
+// Evento que se ejecuta cuando el DOM ha sido completamente cargado
+
 document.addEventListener('DOMContentLoaded', () => {
+	// Carga automáticamente la página de inicio al abrir el sitio
     loadContent('inicio.html');
 });
