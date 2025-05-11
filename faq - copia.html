@@ -3,11 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Preguntas Frecuentes - Aprende Desarrollo Web</title> 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-   <link rel="stylesheet" href="css/style2.css"> 
-
-
+  <title>Preguntas Frecuentes - Aprende Desarrollo Web</title>
+  <link rel="stylesheet" href="css/style2.css">
 </head>
 <body>
   <header>
@@ -48,65 +45,54 @@
   </section>
   
   <div class="faq-content">
-        <div class="marco-destacado2" id="video">            
+        <div class="marco-destacado" id="video">            
             <p>Puedes usar la etiqueta <code>&lt;iframe&gt;</code> con el enlace de inserción de YouTube. Por ejemplo:<br>
             <code>&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</code></p>
         </div>
 		
-		<div class="marco-destacado2" id="flexbox">
+		<div class="marco-destacado" id="flexbox">
             <p>Flexbox es un modelo de diseño en CSS que facilita la alineación y distribución de elementos dentro de un contenedor, incluso cuando su tamaño es dinámico. Es ideal para crear diseños responsivos.</p>
         </div>
-        <div class="marco-destacado2" id="centrar">
+        <div class="marco-destacado" id="centrar">
            
             <p>Una forma común es usar Flexbox:<br>
             <code>display: flex; justify-content: center; align-items: center;</code><br>
             Esto centra el contenido tanto horizontal como verticalmente dentro del contenedor.</p>
         </div>
-        <div class="marco-destacado2" id="dom">
+        <div class="marco-destacado" id="dom">
            
             <p>El DOM (Document Object Model) es una representación estructurada del contenido HTML. JavaScript puede acceder y modificar el DOM para cambiar dinámicamente el contenido, estilo o estructura de la página.</p>
         </div>
-        <div class="marco-destacado2" id="mensaje">
+        <div class="marco-destacado" id="mensaje">
             
             <p>Usa JavaScript así:<br>
             <code>&lt;button onclick="alert('¡Hola!')"&gt;Haz clic&lt;/button&gt;</code></p>
         </div>
-        <div class="marco-destacado2" id="comparacion">
+        <div class="marco-destacado" id="comparacion">
             
             <p><code>==</code> compara valores después de convertirlos al mismo tipo (comparación débil), mientras que <code>===</code> compara tanto el valor como el tipo (comparación estricta). Es recomendable usar <code>===</code> para evitar errores inesperados.</p>
         </div>
         
     </div><script>
-document.addEventListener('DOMContentLoaded', () => {
-  const faqContainer = document.querySelector('.faq');
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.faq-item a').forEach(link => {
+      link.addEventListener('click', function (e) {
+        setTimeout(() => {
+          document.querySelectorAll('.marco-destacado').forEach(div => {
+            div.classList.remove('activo');
+          });
 
-  if (!faqContainer) return;
+          const targetId = this.getAttribute('href').substring(1);
+          const target = document.getElementById(targetId);
 
-  faqContainer.addEventListener('click', (event) => {
-    const link = event.target.closest('a');
-    if (!link) return;
-
-    event.preventDefault();
-
-    const targetId = link.getAttribute('href').slice(1);
-    const targetElement = document.getElementById(targetId);
-
-    if (!targetElement) return;
-
-    // Quitar la clase 'activo' de todos los bloques
-    document.querySelectorAll('.marco-destacado2.activo').forEach(el => {
-      el.classList.remove('activo');
+          if (target) {
+            target.classList.add('activo');
+          }
+        }, 100);
+      });
     });
-
-    // Añadir la clase 'activo' al nuevo bloque
-    targetElement.classList.add('activo');
-
-    // Desplazamiento suave
-    targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
   });
-});
 </script>
-
 
 
 </body>

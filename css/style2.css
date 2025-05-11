@@ -115,10 +115,45 @@
   transform: scale(1.01);
 }
 
+
 .video
 {
 display: flex;
 justify-content: center;
 padding: 20px;
 }
+
+
+.faq-content {
+  position: relative;
+  z-index: 1;
+  padding: 1em;
+}
+
+.marco-destacado2 {
+  background: linear-gradient(135deg, rgba(0, 122, 255, 0.15), rgba(108, 92, 231, 0.15));
+  border: 2px solid var(--primary);
+  border-radius: 16px;
+  padding: 25px 30px;
+  margin-top: 30px;
+  font-size: 1.1rem;
+  color: var(--dark);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.marco-destacado2.activo {  
+  background: #4a5568;
+  color: white !important;
+  border: 3px solid black;
+  position: relative;
+  z-index: 10;
+}
+
+
+
+
+
+
+
 
