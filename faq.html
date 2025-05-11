@@ -76,37 +76,7 @@
             <p><code>==</code> compara valores después de convertirlos al mismo tipo (comparación débil), mientras que <code>===</code> compara tanto el valor como el tipo (comparación estricta). Es recomendable usar <code>===</code> para evitar errores inesperados.</p>
         </div>
         
-    </div><script>
-document.addEventListener('DOMContentLoaded', () => {
-  const faqContainer = document.querySelector('.faq');
-
-  if (!faqContainer) return;
-
-  faqContainer.addEventListener('click', (event) => {
-    const link = event.target.closest('a');
-    if (!link) return;
-
-    event.preventDefault();
-
-    const targetId = link.getAttribute('href').slice(1);
-    const targetElement = document.getElementById(targetId);
-
-    if (!targetElement) return;
-
-    // Quitar la clase 'activo' de todos los bloques
-    document.querySelectorAll('.marco-destacado2.activo').forEach(el => {
-      el.classList.remove('activo');
-    });
-
-    // Añadir la clase 'activo' al nuevo bloque
-    targetElement.classList.add('activo');
-
-    // Desplazamiento suave
-    targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  });
-});
-</script>
-
+    </div>
 
 
 </body>
