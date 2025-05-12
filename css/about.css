@@ -1,0 +1,133 @@
+/* css/about.css */
+
+/* Paleta ligera con un azul Apple-style */
+:root {
+  --bg: #fafafa;
+  --fg: #1d1d1f;
+  --subtle: #6e6e73;
+  --accent: #0a84ff;
+  --accent-light: #e5f1ff;
+  --card-bg: #ffffff;
+  --card-shadow: rgba(0,0,0,0.06);
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  line-height: 1.5;
+}
+
+main {
+  padding: 2rem;
+}
+
+/* Subrayado de sección */
+section h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  position: relative;
+  margin-bottom: 1rem;
+}
+section h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: var(--accent);
+  border-radius: 2px;
+  margin-top: 6px;
+}
+
+/* ABOUT */
+.about p {
+  font-size: 1rem;
+  color: var(--subtle);
+}
+
+/* MVVS */
+.mvvs .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: space-between;
+}
+.mvv-card {
+  flex: 1 1 30%;
+  background: var(--accent-light);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px var(--card-shadow);
+  text-align: center;
+}
+.mvv-icon {
+  font-size: 2.5rem;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+.mvv-card h3 {
+  margin: 0.5rem 0;
+  color: var(--fg);
+}
+.mvv-card p,
+.mvv-card ul {
+  color: var(--subtle);
+  font-size: 0.95rem;
+}
+.mvv-card ul {
+  padding-left: 1rem;
+  text-align: left;
+}
+
+/* ROLES */
+.roles-grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 1.5rem;
+}
+.role-card {
+  background: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px var(--card-shadow);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+.role-card.alt {
+  background: var(--accent-light);
+}
+.role-card:hover {
+  transform: translateY(-4px);
+}
+.role-card.full {
+  grid-column: 1 / -1;
+}
+.role-icon {
+  font-size: 2rem;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+.role-card h4 {
+  margin: 0.5rem 0;
+  color: var(--fg);
+  font-weight: 500;
+}
+.role-card blockquote {
+  margin-top: 0.5rem;
+  color: var(--subtle);
+  font-style: italic;
+}
+
+/* FOOTER */
+.site-footer {
+  background: var(--card-bg);
+  border-top: 1px solid #e5e5e5;
+  text-align: center;
+  padding: 1.5rem 2rem;
+  font-size: 0.9rem;
+  color: var(--subtle);
+}
+.site-footer p {
+  margin: 0.3rem 0;
+}

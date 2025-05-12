@@ -4,77 +4,140 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>¿Qué es HTML?</title>
-  <link rel="stylesheet" href="css/html.css">
+  <link rel="stylesheet" href="css/style2.css">
 </head>
 <body>
-  <header>
-    <h1>¿Qué es <span class="highlight">&lt;HTML&gt;</span>?</h1>
-  </header>
-
-  <section class="intro">
-    <p>HTML (HyperText Markup Language) es el lenguaje que se usa para estructurar páginas web.</p>
-  </section>
-
-  <section class="video">
-    <iframe src="https://www.youtube.com/embed/ok-plXXHlWw" frameborder="0" allowfullscreen></iframe>
-  </section>
-
-  <section class="descripcion">
-    <h2>¿Para qué sirve?</h2>
-    <p>
-      Gracias a HTML puedes crear diferentes bloques que componen una página web como encabezados, párrafos, imágenes, enlaces y más.
-      Se utiliza junto con CSS para el diseño visual y con JavaScript para funcionalidades interactivas.
-    </p>
-  </section>
-
-  <section class="tabla">
-    <h2>Estructura y elementos de HTML</h2>
-    <div class="tabla-container">
-      <div class="columna">
-        <h3>Estructura HTML básica</h3>
-        <pre><code>&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;meta charset="UTF-8"&gt;
-    &lt;title&gt;Mi Página&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;h1&gt;Hola mundo&lt;/h1&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
+  <div class="container"></div>
+    <!-- Encabezado principal -->
+    <header>
+      <h1>¿Qué es &lt;HTML&gt;</span>?</h1>
+      <p>HTML (HyperText Markup Language) es el lenguaje que se usa para estructurar páginas web.</p>
+    </header>
+    
+    <div id='rectanguloazul' class='rectanguloazul'>
+      <!-- Seccion del video -->
+      <div class="text">
+        <h1>Explora el video y aprende sobre HTML.</h1>
       </div>
-      <div class="columna">
-        <h3>Elementos esenciales</h3>
-        <ul>
-          <li><strong>Encabezados:</strong> <code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code></li>
-          <li><strong>Párrafos:</strong> <code>&lt;p&gt;</code></li>
-          <li><strong>Imágenes:</strong> <code>&lt;img&gt;</code></li>
-          <li><strong>Listas:</strong> <code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, <code>&lt;li&gt;</code></li>
-          <li><strong>Enlaces:</strong> <code>&lt;a&gt;</code></li>
-          <li><strong>Tablas:</strong> <code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;td&gt;</code></li>
-          <li><strong>Formularios:</strong> <code>&lt;form&gt;</code>, <code>&lt;input&gt;</code></li>
-        </ul>
+      <section class="video">
+        <iframe src="https://www.youtube.com/embed/ok-plXXHlWw" frameborder="0" allowfullscreen></iframe>
+      </section>
+      <!-- Seccion del descripción -->
+      <section class="descripcion">
+        <h2>¿Para qué sirve?</h2>
+        <br>
+        <p>
+          Gracias a HTML puedes crear diferentes bloques que componen una página web como encabezados, párrafos, imágenes, enlaces y más.
+          Se utiliza junto con CSS para el diseño visual y con JavaScript para funcionalidades interactivas.
+        </p>
+      </section>
+      <!-- Explicacion de HTML -->
+      <section class="cards">
+        <article class="card">
+          <div class="card-content">
+            <h2><strong>Esturctura y elementos de HTML</strong></h2>
+            <h3>Estructura HTML básica</h3>
+            <pre><code>&lt;!DOCTYPE html&gt;
+              &lt;html&gt;
+                &lt;head&gt;
+                  &lt;meta charset="UTF-8"&gt;
+                  &lt;title&gt;Mi Página&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                  &lt;h1&gt;Hola mundo&lt;/h1&gt;
+                &lt;/body&gt;
+              &lt;/html&gt;
+              </code></pre>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-content">
+            <h2><strong>Elementos esenciales</strong></h2>
+            <ol>
+              <li><strong>Encabezados:</strong> <code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code></li>
+              <li><strong>Párrafos:</strong> <code>&lt;p&gt;</code></li>
+              <li><strong>Imágenes:</strong> <code>&lt;img&gt;</code></li>
+              <li><strong>Listas:</strong> <code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, <code>&lt;li&gt;</code></li>
+              <li><strong>Enlaces:</strong> <code>&lt;a&gt;</code></li>
+              <li><strong>Tablas:</strong> <code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;td&gt;</code></li>
+              <li><strong>Formularios:</strong> <code>&lt;form&gt;</code>, <code>&lt;input&gt;</code></li>
+            </ol>
+          </div>
+        </article>
+      </section>
+        <!-- Tabla de etiquetas -->
+      <h1>Tabla de Etiquetas HTML</h1>
+      <table>
+          <thead>
+              <tr>
+                  <th>Etiqueta</th>
+                  <th>Descripción</th>
+                  <th>Ejemplo</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>&lt;h1&gt; a &lt;h6&gt;</td>
+                  <td>Encabezados de diferentes niveles</td>
+                  <td>&lt;h1&gt;Título&lt;/h1&gt;</td>
+              </tr>
+              <tr>
+                  <td>&lt;p&gt;</td>
+                  <td>Párrafo de texto</td>
+                  <td>&lt;p&gt;Este es un párrafo.&lt;/p&gt;</td>
+              </tr>
+              <tr>
+                  <td>&lt;a&gt;</td>
+                  <td>Enlace a otra página o recurso</td>
+                  <td>&lt;a href="https://www.ejemplo.com"&gt;Enlace&lt;/a&gt;</td>
+              </tr>
+              <tr>
+                  <td>&lt;img&gt;</td>
+                  <td>Imagen</td>
+                  <td>&lt;img src="imagen.jpg" alt="Descripción de la imagen"&gt;</td>
+              </tr>
+              <tr>
+                  <td>&lt;ul&gt; y &lt;li&gt;</td>
+                  <td>Lista desordenada</td>
+                  <td>&lt;ul&gt;&lt;li&gt;Elemento&lt;/li&gt;&lt;/ul&gt;</td>
+              </tr>
+              <tr>
+                  <td>&lt;ol&gt; y &lt;li&gt;</td>
+                  <td>Lista ordenada</td>
+                  <td>&lt;ol&gt;&lt;li&gt;Elemento&lt;/li&gt;&lt;/ol&gt;</td>
+              </tr>
+              <tr>
+                  <td>&lt;div&gt;</td>
+                  <td>Contenedor genérico</td>
+                  <td>&lt;div&gt;Contenido&lt;/div&gt;</td>
+              </tr>
+              <tr>
+                  <td>&lt;span&gt;</td>
+                  <td>Contenedor en línea</td>
+                  <td>&lt;span&gt;Texto en línea&lt;/span&gt;</td>
+              </tr>
+              <tr>
+                  <td>&lt;table&gt;, &lt;tr&gt;, &lt;td&gt;, &lt;th&gt;</td>
+                  <td>Tabla y sus elementos</td>
+                  <td>&lt;table&gt;&lt;tr&gt;&lt;th&gt;Encabezado&lt;/th&gt;&lt;td&gt;Dato&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</td>
+              </tr>
+          </tbody>
+      </table>
+    </div>
+
+    <section class="links-imagenes">
+      <div class="link-box">
+        <a href="#" onclick="loadContent('css.html')">
+          <img src="images/css.png" alt="Aprende CSS">
+          <p>Aprende más sobre CSS</p>
+        </a>
       </div>
-    </div>
-  </section>
-  <section class="links-imagenes">
-    <div class="link-box">
-      <a href="#" onclick="loadContent('css.html')">
-        <img src="images/css.png" alt="Aprende CSS">
-        <p>Aprende más sobre CSS</p>
-      </a>
-    </div>
-    <div class="link-box">
-      <a href="#" onclick="loadContent('javascript.html')">
-        <img src="images/javascript.png"Aprende JavaScript">
-        <p>Aprende más sobre JavaScript</p>
-      </a>
-    </div>
-  </section>
-  
-  <footer>
-    <p>🌐 Sigue aprendiendo más sobre HTML, CSS y JavaScript.</p>
-  </footer>
-</body>
+      <div class="link-box">
+        <a href="#" onclick="loadContent('javascript.html')">
+          <img src="images/javascript.png"Aprende JavaScript">
+          <p>Aprende más sobre JavaScript</p>
+        </a>
+      </div>
+    </section>
+  </body>
 </html>
