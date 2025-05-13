@@ -1,117 +1,114 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Metodología</title>
-  <!-- Tipografía local: archivos en carpeta 'fonts' -->
-  <link rel="stylesheet" href="css/style2.css">
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>CSS</title>
+		<!-- Tipografía local: archivos en carpeta 'fonts' -->
+		<link rel="stylesheet" href="css/style2.css">
+	</head>
+	<body>
+		<div class="container">
+		<!-- Encabezado principal -->
+			<header>
+				<h1>¿Qué es &lt;CSS&gt;?</h1>
+				<p>CSS (Cascading Style Sheets, en español, Hojas de Estilo en Cascada) es un lenguaje que se usa para definir y controlar el aspecto visual de una página web creada con HTML. Con CSS puedes cambiar colores, tamaños, tipografías, posiciones y mucho más, logrando que tu página sea visualmente atractiva y agradable para los usuarios.</p>
+			</header>
+			<article class="card">
+				<div class="card-content">
+					<h2><strong>¿Para qué sirve CSS?</strong></h2>
+					<p>Gracias a CSS puedes:</p>
+					<ul>
+						<li>Cambiar colores y fondos</li>
+						Define colores para textos, fondos y elementos gráficos, haciendo tu página más atractiva.
+						<br>
+						<br>
+						<li>Modificar tipos y tamaños de letra</li>
+						Elige tipografías específicas y ajusta su tamaño y estilo para mejorar la legibilidad y estética de tu página.
+						<br>
+						<br>
+						<li>Definir el tamaño y posición de los elementos</li>
+						Decide cómo se organizan las imágenes, textos, botones y otros elementos dentro de la página.
+						<br>
+						<br>
+						<li>Crear efectos visuales atractivos</li>
+						Añade bordes, sombras, transparencias y efectos dinámicos que hacen tu web más interactiva y moderna.
+						<br>
+						<br>
+						<li>Adaptar tu web a cualquier dispositivo (responsive)</li>
+						Con CSS es fácil crear una web adaptable a ordenadores, tablets o móviles, asegurando una buena experiencia de usuario en cualquier pantalla.
+					</ul>          
+				</div>
+			</article>
+			<section class="video">
+				<iframe src="https://www.youtube.com/embed/OEV8gMkCHXQ" frameborder="0" allowfullscreen></iframe>
+			</section>
+			<!-- Tarjetas metodológicas -->
+			<section class="cards">
+				<article class="card">
+					<div class="card-content">
+						<h2><strong>¿Qué opciones hay para vincular CSS con tu documento HTML?</strong></h2>
+						<ul>
+							<li>Crea un archivo .css externo y vincúlalo a tu HTML:</li>
+							<div class="cssseccion1">
+								&lt;head&gt;<br>
+								&nbsp;&nbsp;&lt;link rel="stylesheet" href="estilos.css"	
+								&gt;<br>
+								&lt;/head&gt;
+							</div>
+							<br>
+							<li>Usa la etiqueta &lt;style&gt; dentro del documento HTML:</li>
+							<div>
+								&lt;head&gt;&lt;style&gt;h1 {color:blue;}&lt;/style&gt;&lt;/head&gt;
+							</div>
+							<br>
+							<li>Aplica estilos directamente sobre los elementos HTML:<br>
+							Se recomienda evitar esta opción en la mayoría de los casos</li>
+							<div>
+								&lt;h1 style="color:blue;"&gt;Titulo azul&lt;/h1&gt;
+							</div>
+						</ul>          
+					</div>
+				</article>
+				<article class="card">
+					<div class="card-content">
+						<h2><strong>Ejemplo sencillo</strong></h2>
+						<ul>
+							<li><strong>Código HTML</strong></li>
+							<ul>&lt;h1 class='h1'&gt;Bienvenidos a mi web&lt;/h1&gt;</ul>
+							<ul>&lt;p class='p'&gt;Este párrafo es sencillo&lt;/p&gt;</ul>
+							<li><strong>Código CSS</strong></li>
+							<ul>
+								.h1{<br>
+								color: green;<br>
+								text-align: center;<br>
+								}
+							</ul>
+							<ul>
+								.p{<br>
+								font-size: 16px;<br>
+								color: #333;<br>
+								}
+							</ul>
+						</ul>
+					</div>
+				</article>
+			</section>
+			<section class="steps">
+				<div class="step">
+					<h4>Sigue aprendiendo....</h4>
+					<a href="https://www.w3schools.com/Css/" target="_blank" rel="noopener noreferrer" class="external-link">Aprende CSS en W3Schools </a>
 
-  <div class="container">
-    <!-- Encabezado principal -->
-    <header>
-      <h1>¿Qué es &lt;CSS&gt;?</h1>
-      <p>CSS (Cascading Style Sheets, en español, Hojas de Estilo en Cascada) es un lenguaje que se usa para definir y controlar el aspecto visual de una página web creada con HTML. Con CSS puedes cambiar colores, tamaños, tipografías, posiciones y mucho más, logrando que tu página sea visualmente atractiva y agradable para los usuarios.</p>
-    </header>
-    <article class="card">
-        <div class="card-content">
-          <h2><strong>¿Para qué sirve CSS?</strong></h2>
-	  <p>Gracias a CSS puedes:</p>
-          <ul>
-            <li>Cambiar colores y fondos</li>
-	    Define colores para textos, fondos y elementos gráficos, haciendo tu página más atractiva.
-	    <br>
-	    <br>
-            <li>Modificar tipos y tamaños de letra</li>
-	    Elige tipografías específicas y ajusta su tamaño y estilo para mejorar la legibilidad y estética de tu página.
-	    <br>
-	    <br>
-            <li>Definir el tamaño y posición de los elementos</li>
-	    Decide cómo se organizan las imágenes, textos, botones y otros elementos dentro de la página.
-	    <br>
-	    <br>
-	    <li>Crear efectos visuales atractivos</li>
-	    Añade bordes, sombras, transparencias y efectos dinámicos que hacen tu web más interactiva y moderna.
-	    <br>
-	    <br>
-	    <li>Adaptar tu web a cualquier dispositivo (responsive)</li>
-	    Con CSS es fácil crear una web adaptable a ordenadores, tablets o móviles, asegurando una buena experiencia de usuario en cualquier pantalla.
-          </ul>          
-        </div>
-      </article>
-
-    
-    <section class="video">
-	<iframe src="https://www.youtube.com/embed/OEV8gMkCHXQ" frameborder="0" allowfullscreen></iframe>
-    </section>
-    <!-- Tarjetas metodológicas -->
-    <section class="cards">
-      <article class="card">
-        <div class="card-content">
-          <h2><strong>¿Qué opciones hay para vincular CSS con tu documento HTML?</strong></h2>
-          <ul>
-            <li>Crea un archivo .css externo y vincúlalo a tu HTML:</li>
-	    	<div class="cssseccion1">
-	       		&lt;head&gt;<br>
-		  	&nbsp;&nbsp;&lt;link rel="stylesheet" href="estilos.css"	
-			&gt;<br>
-		        &lt;/head&gt;
-	        </div>
-	    <br>
-            <li>Usa la etiqueta &lt;style&gt; dentro del documento HTML:</li>
-		<div>
-	            	&lt;head&gt;&lt;style&gt;h1 {color:blue;}&lt;/style&gt;&lt;/head&gt;
-	      	</div>
-	    <br>
-            <li>Aplica estilos directamente sobre los elementos HTML:<br>
-	       Se recomienda evitar esta opción en la mayoría de los casos</li>
-		<div>
-			&lt;h1 style="color:blue;"&gt;Titulo azul&lt;/h1&gt;
-	        </div>
-          </ul>          
-        </div>
-      </article>
-      <article class="card">
-        <div class="card-content">
-          <h2><strong>Ejemplo sencillo</strong></h2>
-	<ul>
-          <li><strong>Código HTML</strong></li>
-          <ul>&lt;h1 class='h1'&gt;Bienvenidos a mi web&lt;/h1&gt;</ul>
-	  <ul>&lt;p class='p'&gt;Este párrafo es sencillo&lt;/p&gt;</ul>
-          <li><strong>Código CSS</strong></li>
-          <ul>
-            .h1{<br>
-		color: green;<br>
-		text-align: center;<br>
-	    }
-          </ul>
-	  <ul>
-            .p{<br>
-		font-size: 16px;<br>
-		color: #333;<br>
-	    }
-          </ul>
-	</ul>
-        </div>
-      </article>
-    </section>
-    <!-- Pasos de implementación -->
-    <section class="steps">
-      <div class="step">
-    <h4>Sigue aprendiendo....</h4>
-      </div>
-    </section>
-    <section class="steps">
-      <div class="step">
-	<a href="../html.html"><img src="images/AprendeMasHTML.jpg" style="margin-right: 40px;" href="www.google.es"></img></a>        
-      </div>
-      <div class="step">
-	<a href="../javascript.html"><img src="images/AprendeMasJavaScript.jpg"></img></a>
-      </div>
-    </section>
-  </div>
-  </div>
-</body>
+				</div>
+			</section>
+			<section class="steps">
+				<div class="step">
+					<a href="#" onclick="loadContent('html.html')"><img src="images/html.png"></img><p>Aprende más sobre HTML</p></a>
+				</div>
+				<div class="step">
+					<a href="#" onclick="loadContent('javascript.html')"><img src="images/javascript.png"></img><p>Aprende más sobre JavaScript</p></a>
+				</div>
+			</section>
+		</div>
+	</body>
 </html>

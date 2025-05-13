@@ -1,14 +1,194 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript</title>
-</head>
-<body>
-    <section>
-        <h2>JavaScript</h2>
-        <p>Contenido sobre JavaScript.</p>
-    </section>
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>JavaScript</title>
+		<!-- Tipografía local: archivos en carpeta 'fonts' -->
+		<link rel="stylesheet" href="css/style2.css">
+	</head>
+	<body>
+		<div class="container">
+		<!-- Encabezado principal -->
+			<header>
+				<h1>¿Qué es &lt;JavaScript&gt;?</h1>
+				<p>JavaScript es un lenguaje de programación utilizado para añadir características interactivas a una página web creada con HTML. Fue inventado por Brendan Eich, cofundador de Mozilla.</p>
+			</header>
+			<article class="card">
+				<div class="card-content">
+					<h2><strong>¿Para qué sirve JavaScript</strong></h2>
+					<p>Gracias a JavaScript puedes:</p>
+					<ul>
+						<li>Interactuar con el usuario</li>
+						Muestra u oculta elementos, valida formularios antes de enviarlos, o detecta acciones del usuario.
+						<br>
+						<br>
+						<li>Manipular el contenido de la página</li>
+						Cambiar texto, estilos, imágenes o cualquier otro contenido sin recargar la página.
+						<br>
+						<br>
+						<li>Crear aplicaciones web completas</li>
+						En el frontend (navegador), junto con HTML y CSS.
+						<br>
+						<br>
+						<li>Crear animaciones y efectos visuales</li>
+						Genera transiciones, sliders, galerías de imágenes, etc.
+					</ul>          
+				</div>
+			</article>
+			<section class="video">
+				<iframe src="https://www.youtube.com/embed/DHjqpvDnNGE?si=alSJ82FjNJPafvvG" frameborder="0" allowfullscreen></iframe>
+			</section>
+			<!-- Tarjetas metodológicas -->
+			<section class="cards">
+				<article class="card">
+					<div class="card-content">
+						<h2><strong>¿Cómo se usa JavaScript con HTML y CSS?</strong></h2>
+						<ol>
+							<li><strong>Modificar contenido HTML dinámicamente:</strong></li>
+							<div>
+								&lt;script&gt;<br>
+								&nbsp;&nbsp;document.getElementById("titulo").innerText = "Nuevo título";<br>							
+								&lt;/script&gt;						
+							</div>
+							<br>
+							<li><strong>Cambiar estilos CSS desde JavaScript:</strong></li>
+							<div>								
+								&lt;script&gt;<br>
+								&nbsp;&nbsp;document.querySelector("h1").style.color = "red";<br>
+								&lt;/script&gt;
+							</div>
+							<br>
+							<li><strong>Añadir o quitar clases CSS:</strong></li>
+							<div>
+								&lt;script&gt;<br>
+								&nbsp;&nbsp;document.getElementById("caja").classList.add("resaltado");<br>
+								&lt;/script&gt;
+							</div>
+							<br>				
+							<li><strong>Responder a eventos del usuario:</strong></li>
+							<div>
+								&lt;button onclick="alert('¡Haz hecho clic!')"&gt;Haz clic aquí&lt;/button&gt;
+							</div>
+							<br>
+							<li><strong>Validar formularios antes de enviarlos:</strong></li>
+							<div>
+								&lt;script&gt;<br>
+								&nbsp;&nbsp;function validar() {<br>	
+									&nbsp;&nbsp;&nbsp;&nbsp;let nombre = document.getElementById("nombre").value;<br>
+									&nbsp;&nbsp;&nbsp;&nbsp;if (nombre === "") alert("El nombre es obligatorio");<br>
+									&nbsp;&nbsp;}<br>
+								&lt;/script&gt;					
+							</div>
+						</ol>
+					</div>
+				</article>
+				<article class="card">
+					<div class="card-content">
+						<h2><strong>Cómo hacer un cuestionario de Autoevaluación</strong></h2>
+						<ul>
+						<li><strong>Caja de texto (respuesta corta):</strong></li>
+						<div>
+							&lt;label for="respuestaCorta"&gt;1. ¿Cuál es la capital de Francia?&lt;/label&gt;<br>
+							&lt;input type="text" id="respuestaCorta" name="respuestaCorta" placeholder="Escribe tu respuesta"&gt;<br>
+							<em>Validación con JavaScript:</em><br>
+							&lt;script&gt;<br>
+							&nbsp;&nbsp;if (document.getElementById("respuestaCorta").value.toLowerCase() !== "parís") {<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;alert("Respuesta incorrecta");<br>
+							&nbsp;&nbsp;}<br>
+							&lt;/script&gt;
+						</div>
+						<br>
+
+						<li><strong>Radio Button (test de única respuesta):</strong></li>
+						<div>
+							&lt;label&gt;2. ¿Cuál es un lenguaje de programación?&lt;/label&gt;<br>
+							&lt;input type="radio" name="pregunta2" value="HTML"&gt; HTML<br>
+							&lt;input type="radio" name="pregunta2" value="JavaScript"&gt; JavaScript<br>
+							&lt;input type="radio" name="pregunta2" value="CSS"&gt; CSS<br>
+						</div>
+						<br>
+
+						<li><strong>Combo Box (desplegable, test única):</strong></li>
+						<div>
+							&lt;label for="combo"&gt;3. Selecciona un navegador web:&lt;/label&gt;<br>
+							&lt;select id="combo" name="combo"&gt;<br>
+							&nbsp;&nbsp;&lt;option value=""&gt;--Selecciona--&lt;/option&gt;<br>
+							&nbsp;&nbsp;&lt;option value="Chrome"&gt;Chrome&lt;/option&gt;<br>
+							&nbsp;&nbsp;&lt;option value="Photoshop"&gt;Photoshop&lt;/option&gt;<br>
+							&nbsp;&nbsp;&lt;option value="Firefox"&gt;Firefox&lt;/option&gt;<br>
+							&lt;/select&gt;
+						</div>
+						<br>
+
+						<li><strong>Check Button (test múltiple):</strong></li>
+						<div>
+							&lt;label&gt;4. ¿Cuáles son sistemas operativos?&lt;/label&gt;<br>
+							&lt;input type="checkbox" name="so" value="Windows"&gt; Windows<br>
+							&lt;input type="checkbox" name="so" value="Linux"&gt; Linux<br>
+							&lt;input type="checkbox" name="so" value="Excel"&gt; Excel<br>
+						</div>
+						<br>
+
+						<li><strong>Selection Box (selección múltiple):</strong></li>
+						<div>
+							&lt;label for="selMultiple"&gt;5. Selecciona lenguajes de programación:&lt;/label&gt;<br>
+							&lt;select id="selMultiple" name="lenguajes" multiple size="4"&gt;<br>
+							&nbsp;&nbsp;&lt;option value="Python"&gt;Python&lt;/option&gt;<br>
+							&nbsp;&nbsp;&lt;option value="Word"&gt;Word&lt;/option&gt;<br>
+							&nbsp;&nbsp;&lt;option value="Java"&gt;Java&lt;/option&gt;<br>
+							&nbsp;&nbsp;&lt;option value="PowerPoint"&gt;PowerPoint&lt;/option&gt;<br>
+							&lt;/select&gt;
+						</div>
+						<br>
+
+						<li><strong>Decoración con CSS:</strong></li>
+						<div>
+							&lt;style&gt;<br>
+							&nbsp;&nbsp;input, select {<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;margin-bottom: 10px;<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;border-radius: 5px;<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;padding: 5px;<br>
+							&nbsp;&nbsp;}<br>
+							&nbsp;&nbsp;label {<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;font-weight: bold;<br>
+							&nbsp;&nbsp;}<br>
+							&lt;/style&gt;
+						</div>
+						<br>
+
+						<li><strong>Validación con JavaScript:</strong></li>
+						<div>
+							&lt;script&gt;<br>
+							&nbsp;&nbsp;function validarFormulario() {<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;let respuesta = document.getElementById("respuestaCorta").value;<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;if (respuesta.trim().toLowerCase() !== "parís") {<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert("Pregunta 1 incorrecta");<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return false;<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;alert("Formulario validado correctamente");<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;return true;<br>
+							&nbsp;&nbsp;}<br>
+							&lt;/script&gt;
+						</div>
+						</ul>
+					</div>
+				</article>
+			</section>
+			<section class="steps">
+				<div class="step">
+					<h4>Sigue aprendiendo....</h4>
+					<a href="https://www.w3schools.com/js/default.asp" target="_blank" rel="noopener noreferrer" class="external-link">Aprende JavaScript en W3Schools </a>
+				</div>
+			</section>
+			<section class="steps">
+				<div class="step">
+					<a href="#" onclick="loadContent('html.html')"><img src="images/html.png"></img><p>Aprende más sobre HTML</p></a>
+				</div>
+				<div class="step">
+					<a href="#" onclick="loadContent('css.html')"><img src="images/css.png"></img><p>Aprende más sobre CSS</p></a>
+				</div>
+			</section>
+		</div>
+	</body>
 </html>
