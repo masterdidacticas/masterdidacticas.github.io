@@ -1,36 +1,30 @@
-<!DOCTYPE html>
-
-<html lang="es">
-<head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title>Evaluación de Preguntas</title>
-	<link href="css/style2.css" rel="stylesheet"/>
-</head>
-<body>
 <div class="container">
 <header>
 <h1>Formulario de Evaluación</h1>
 <p>Responde las siguientes preguntas y evalúa tus respuestas.</p>
 </header>
+	<div class="card-content">
 	    <div class="card" id="pregunta1">
 	        <h4>1. ¿Qué es el atributo alt en una etiqueta &lt;img&gt; y cuál es su función?</h4>
 	        <textarea class="textarea" id="q1" rows="3"></textarea>
 		    <br/>
-	        <button class="boton-estilizado" onclick="evaluarPregunta1()">Evaluar</button>
+	        <div class="boton-centro"><button class="boton-estilizado" onclick="evaluarPregunta1()">Evaluar</button></div>
 	        <p id="result1"></p>
 	    </div>
-	    <div class="card" id="pregunta2" style="display: none;">
-			<h4>2. ¿Cuál es la etiqueta correcta para crear una lista desordenada en HTML?</h4>
-			<input id="radio_0" name="q2" type="radio" value="ol"/><label for="radio_0">&lt;ol&gt;</label><br/>
-			<input id="radio_1" name="q2" type="radio" value="ul"/><label for="radio_1">&lt;ul&gt;</label><br/>
-			<input id="radio_2" name="q2" type="radio" value="dl"/><label for="radio_2">&lt;dl&gt;</label><br/>
-			<input id="radio_3" name="q2" type="radio" value="li"/><label for="radio_3">&lt;li&gt;</label><br/>
-		    <br/>
-			<button class="boton-estilizado" onclick="evaluarPregunta2()">Evaluar</button>
+	    <div class="cardoculto" id="pregunta2"><br/>
+			<h4>2. ¿Cuál es la etiqueta correcta para crear una lista desordenada en HTML?</h4><br/>
+			<div class="radio-group">
+			  <input id="radio_0" name="q2" type="radio" value="ol"/><label for="radio_0">&lt;ol&gt;</label>
+			  <input id="radio_1" name="q2" type="radio" value="ul"/><label for="radio_1">&lt;ul&gt;</label>
+			  <input id="radio_2" name="q2" type="radio" value="dl"/><label for="radio_2">&lt;dl&gt;</label>
+			  <input id="radio_3" name="q2" type="radio" value="li"/><label for="radio_3">&lt;li&gt;</label>
+		    </div>
+			<br/>
+			<div class="boton-centro"><button class="boton-estilizado" onclick="evaluarPregunta2()">Evaluar</button></div>
 	        <p id="result2"></p>
 		</div>
-		<div class="card" id="pregunta3" style="display: none;">
+		<br/>
+		<div class="cardoculto" id="pregunta3">
 		    <h4>3. ¿Qué etiqueta HTML se usa para incrustar un archivo de audio en una página web?</h4>
 		    <select id="q3">
 		        <option value="">Seleccione una opción</option>
@@ -41,23 +35,26 @@
 		    </select>
 		    <br/>
 			<br/>
-		    <button class="boton-estilizado" onclick="evaluarPregunta3()">Evaluar</button>
+		    <div class="boton-centro"><button class="boton-estilizado" onclick="evaluarPregunta3()">Evaluar</button></div>
 		    <p id="result3"></p>
 		</div>
-		<div class="card" id="pregunta4" style="display: none;">
+		<br/>
+		<div class="cardoculto" id="pregunta4">
 		    <h4>4. ¿Cuáles de las siguientes etiquetas se utilizan para crear formularios en HTML?</h4>
-		    <input id="checkbox_0" name="q4" type="checkbox" value="form"/><label for="checkbox_0">&lt;form&gt;</label><br/>
-			<input id="checkbox_1" name="q4" type="checkbox" value="input"/><label for="checkbox_1">&lt;input&gt;</label><br/>
-			<input id="checkbox_2" name="q4" type="checkbox" value="button"/><label for="checkbox_2">&lt;button&gt;</label><br/>
-			<input id="checkbox_3" name="q4" type="checkbox" value="iframe"/><label for="checkbox_3">&lt;iframe&gt;</label><br/>
+		    <div class="checkbox-group">
+			  <input id="checkbox_0" name="q4" type="checkbox" value="form"/><label for="checkbox_0">&lt;form&gt;</label>
+			  <input id="checkbox_1" name="q4" type="checkbox" value="input"/><label for="checkbox_1">&lt;input&gt;</label>
+			  <input id="checkbox_2" name="q4" type="checkbox" value="button"/><label for="checkbox_2">&lt;button&gt;</label>
+			  <input id="checkbox_3" name="q4" type="checkbox" value="iframe"/><label for="checkbox_3">&lt;iframe&gt;</label>
+			</div>
 		    <br/>
-		    <button class="boton-estilizado" onclick="evaluarPregunta4()">Evaluar</button>
+		    <div class="boton-centro"><button class="boton-estilizado" onclick="evaluarPregunta4()">Evaluar</button></div>
 		    <p id="result4"></p>
 		</div>
 	    
 
-		<div class="card" id="pregunta5" style="display: none;">
-		    <h4>5. ¿Cuál es el propósito del atributo action en una etiqueta &lt;form&gt;?</h4>
+		<div class="cardoculto" id="pregunta5">
+		    <h4>5. ¿Cuál es el propósito del atributo action en una etiqueta &lt;form&gt;?</h4><br/>
 			<select id="q5">
 				<option value="">Seleccione una opción</option>
 				<option value="url">Especificar la URL a la que se enviarán los datos del formulario.</option>
@@ -67,31 +64,33 @@
 			</select>
 		    <br/>
 		    <br/>
-		    <button class="boton-estilizado" onclick="evaluarPregunta5()">Evaluar</button>
+		    <div class="boton-centro"><button class="boton-estilizado" onclick="evaluarPregunta5()">Evaluar</button></div>
 		    <p id="result5"></p>
 		</div>
 		<br/>
-		<div class="card" id="pregunta6" style="display: none;">
-			<h4>6. Explica la diferencia entre padding y margin en CSS.</h4>
+		<div class="cardoculto" id="pregunta6"><br/>
+			<h4>6. Explica la diferencia entre padding y margin en CSS.</h4><br/>
 			<textarea class="textarea" id="q6" rows="3"></textarea>
 		    <br/>
-		    <button class="boton-estilizado" onclick="evaluarPregunta6()">Evaluar</button>
+		    <div class="boton-centro"><button class="boton-estilizado" onclick="evaluarPregunta6()">Evaluar</button></div>
 		    <p id="result6"></p>
 		</div>
 		<br/>
-		<div class="card" id="pregunta7" style="display: none;">
-		    <h4>7. ¿Qué propiedad CSS se utiliza para cambiar el color de fondo de un elemento?</h4>
-			<input id="radio_4" name="q7" type="radio" value="color"/><label for="radio_4">color</label> color<br/>
-			<input id="radio_5" name="q7" type="radio" value="background-color"/><label for="radio_5">background-color</label><br/>
-			<input id="radio_6" name="q7" type="radio" value="border-color"/><label for="radio_6">border-color</label><br/>
-			<input id="radio_7" name="q7" type="radio" value="text-color"/><label for="radio_7">text-color</label><br/>
-		    <br/>
-		    <button class="boton-estilizado" onclick="evaluarPregunta7()">Evaluar</button>
+		<div class="cardoculto" id="pregunta7">
+		    <h4>7. ¿Qué propiedad CSS se utiliza para cambiar el color de fondo de un elemento?</h4><br/>
+			<div class="radio-group">
+			  <input id="radio_4" name="q7" type="radio" value="color"/><label for="radio_4">color</label>
+			  <input id="radio_5" name="q7" type="radio" value="background-color"/><label for="radio_5">background-color</label>
+			  <input id="radio_6" name="q7" type="radio" value="border-color"/><label for="radio_6">border-color</label>
+			  <input id="radio_7" name="q7" type="radio" value="text-color"/><label for="radio_7">text-color</label>
+		    </div>
+			<br/>
+		    <div class="boton-centro"><button class="boton-estilizado" onclick="evaluarPregunta7()">Evaluar</button></div>
 		    <p id="result7"></p>
 		</div>
 		<br/>
-		<div class="card" id="pregunta8" style="display: none;">
-				    <h4>8. ¿Cómo se declara un color en formato hexadecimal en CSS?</h4>
+		<div class="cardoculto" id="pregunta8"><br/>
+			<h4>8. ¿Cómo se declara un color en formato hexadecimal en CSS?</h4><br/>
 			<select id="q8">
 				<option value="">Seleccione una opción</option>
 				<option value="#RGB">#RGB</option>
@@ -101,21 +100,25 @@
 			</select>
 		    <br/>
 		    <br/>
-		    <button class="boton-estilizado" onclick="evaluarPregunta8()">Evaluar</button>
+		    <div class="boton-centro"><button class="boton-estilizado" onclick="evaluarPregunta8()">Evaluar</button></div>
 		    <p id="result8"></p>
 		</div>
-		<div class="card" id="pregunta9" style="display: none;">
-		    <h4>9. ¿Cuáles de las siguientes propiedades CSS se usan para posicionar un elemento?</h4>
-			<input id="checkbox_4" name="q9" type="checkbox" value="position"/><label for="checkbox_4">position</label><br/>
-			<input id="checkbox_5" name="q9" type="checkbox" value="top"/><label for="checkbox_5">top</label><br/>
-			<input id="checkbox_6" name="q9" type="checkbox" value="left"/><label for="checkbox_6">left</label><br/>
-			<input id="checkbox_7" name="q9" type="checkbox" value="align-items"/><label for="checkbox_7">align-items</label><br/>
-		    <br/>
-		    <button class="boton-estilizado" onclick="evaluarPregunta9()">Evaluar</button>
+		<br/>
+		<div class="cardoculto" id="pregunta9">
+		    <h4>9. ¿Cuáles de las siguientes propiedades CSS se usan para posicionar un elemento?</h4><br/>
+			<div class="checkbox-group">
+			  <input id="checkbox_4" name="q9" type="checkbox" value="position"/><label for="checkbox_4">position</label>
+			  <input id="checkbox_5" name="q9" type="checkbox" value="top"/><label for="checkbox_5">top</label>
+			  <input id="checkbox_6" name="q9" type="checkbox" value="left"/><label for="checkbox_6">left</label>
+			  <input id="checkbox_7" name="q9" type="checkbox" value="align-items"/><label for="checkbox_7">align-items</label>
+		    </div>
+			<br/>
+		    <div class="boton-centro"><button class="boton-estilizado" onclick="evaluarPregunta9()">Evaluar</button></div>
 		    <p id="result9"></p>
 		</div>
-		<div class="card" id="pregunta10" style="display: none;">
-		    <h4>10. ¿Qué unidad de medida en CSS es relativa al tamaño de la fuente del elemento?</h4>
+		<br/>
+		<div class="cardoculto" id="pregunta10">
+		    <h4>10. ¿Qué unidad de medida en CSS es relativa al tamaño de la fuente del elemento?</h4><br/>
 			<select id="q10">
 				<option value="">Seleccione una opción</option>
 				<option value="px">px</option>
@@ -125,36 +128,36 @@
 			</select>
 		    <br/>
 		    <br/>
-		    <button class="boton-estilizado" onclick="evaluarPregunta10()">Evaluar</button>
+		    <div class="boton-centro"><button class="boton-estilizado" onclick="evaluarPregunta10()">Evaluar</button></div>
 		    <p id="result10"></p>
 		</div>
-		<div class="card" id="pregunta11" style="display: none;">
-			<h4>11. ¿Qué es una variable en JavaScript y cómo se declara?</h4>
+		<br/>
+		<div class="cardoculto" id="pregunta11"><br/>
+			<h4>11. ¿Qué es una variable en JavaScript y cómo se declara?</h4><br/>
 			<textarea class="textarea" id="q11" rows="3"></textarea>
 			<br/>
 			<br/>
-		    <button class="boton-estilizado" onclick="evaluarPregunta11()">Evaluar</button>
+		    <div class="boton-centro"><button class="boton-estilizado" onclick="evaluarPregunta11()">Evaluar</button></div>
 		    <p id="result11"></p>
 		</div>
-		<div class="card" id="pregunta12" style="display: none;">
-		    <h4>12. ¿Cuál de las siguientes funciones se utiliza para agregar un evento a un elemento en JavaScript?</h4>
-				<input id="radio_8" name="q12" type="radio" value="addEventListener"/><label for="radio_8">addEventListener()</label><br/>
-				<input id="radio_9" name="q12" type="radio" value="attachEvent"/><label for="radio_9">attachEvent()</label><br/>
-				<input id="radio_10" name="q12" type="radio" value="setEvent"/><label for="radio_10">setEvent()</label><br/>
-				<input id="radio_11" name="q12" type="radio" value="listenEvent"/><label for="radio_11">listenEvent()</label><br/>
-		    <br/>
-		    <button class="boton-estilizado" onclick="evaluarPregunta12()">Evaluar</button>
+		<br/>
+		<div class="cardoculto" id="pregunta12">
+		    <h4>12. ¿Cuál de las siguientes funciones se utiliza para agregar un evento a un elemento en JavaScript?</h4><br/>
+			<div class="radio-group">
+			  	<input id="radio_8" name="q12" type="radio" value="addEventListener"/><label for="radio_8">addEventListener()</label>
+			  	<input id="radio_9" name="q12" type="radio" value="attachEvent"/><label for="radio_9">attachEvent()</label>
+			  	<input id="radio_10" name="q12" type="radio" value="setEvent"/><label for="radio_10">setEvent()</label>
+			  	<input id="radio_11" name="q12" type="radio" value="listenEvent"/><label for="radio_11">listenEvent()</label>
+		    </div>			
+			<br/>
+		    <div class="boton-centro"><button class="boton-estilizado" onclick="evaluarPregunta12()">Evaluar</button></div>
 		    <p id="result12"></p>
 		</div>
-		<div class="steps" id="botones" style="display: none;">
-			<button class="boton-estilizado" onclick="mostrarTotalAcertadas()">Mostrar Total de Respuestas Correctas</button>
+		<div class="stepsoculto" id="botones">
+			<div class="boton-centro"><button class="boton-estilizado" onclick="mostrarTotalAcertadas()">Mostrar Total de Respuestas Correctas</button></div>
 			<p id="totalAcertadas"></p>
 		</div>
 		<div class="step">
-			<button class="boton-estilizado" onclick="reiniciarFormulario()">Reiniciar Formulario</button>
+			<div class="boton-centro"><button class="boton-estilizado" onclick="reiniciarFormulario()">Reiniciar Formulario</button></div>
 		</div>
 	</div>
-	
-    
-</body>
-</html>
