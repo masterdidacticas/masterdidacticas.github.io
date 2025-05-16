@@ -63,6 +63,10 @@ function evaluarPregunta1() {
 
 	// Mostrar la segunda pregunta
 	document.getElementById('pregunta2').style.display = 'block';
+	
+  // Hacer scroll hacia la siguiente pregunta
+  document.getElementById('pregunta2').scrollIntoView({ behavior: 'smooth' });
+
 }
 
 function evaluarPregunta2() {
@@ -90,6 +94,8 @@ function evaluarPregunta2() {
 	event.target.disabled = true;
 
     document.getElementById('pregunta3').style.display = 'block';
+	
+  document.getElementById('pregunta3').scrollIntoView({ behavior: 'smooth' });
 }
 
 function evaluarPregunta3() {
@@ -104,6 +110,8 @@ function evaluarPregunta3() {
     document.getElementById('q3').disabled = true;
     event.target.disabled = true;
     document.getElementById('pregunta4').style.display = 'block';
+	
+  document.getElementById('pregunta4').scrollIntoView({ behavior: 'smooth' });
 }
 
 function evaluarPregunta4() {
@@ -127,6 +135,8 @@ function evaluarPregunta4() {
     }
     event.target.disabled = true;
     document.getElementById('pregunta5').style.display = 'block';
+	
+  document.getElementById('pregunta5').scrollIntoView({ behavior: 'smooth' });
 }
 
 
@@ -142,7 +152,8 @@ function evaluarPregunta5() {
     document.getElementById('q5').disabled = true;
     event.target.disabled = true;
     document.getElementById('pregunta6').style.display = 'block';
-}
+	
+  document.getElementById('pregunta6').scrollIntoView({ behavior: 'smooth' });}
 
 function evaluarPregunta6() {
     const answer = document.getElementById('q6').value;
@@ -156,6 +167,8 @@ function evaluarPregunta6() {
     document.getElementById('q6').disabled = true;
     event.target.disabled = true;
     document.getElementById('pregunta7').style.display = 'block';
+	
+  document.getElementById('pregunta7').scrollIntoView({ behavior: 'smooth' });
 }
 
 function evaluarPregunta7() {
@@ -178,6 +191,8 @@ function evaluarPregunta7() {
     }
     event.target.disabled = true;
     document.getElementById('pregunta8').style.display = 'block';
+	
+  document.getElementById('pregunta8').scrollIntoView({ behavior: 'smooth' });
 }
 
 function evaluarPregunta8() {
@@ -192,6 +207,8 @@ function evaluarPregunta8() {
     document.getElementById('q8').disabled = true;
     event.target.disabled = true;
     document.getElementById('pregunta9').style.display = 'block';
+	
+  document.getElementById('pregunta9').scrollIntoView({ behavior: 'smooth' });
 }
 
 function evaluarPregunta9() {
@@ -215,6 +232,8 @@ function evaluarPregunta9() {
     }
     event.target.disabled = true;
     document.getElementById('pregunta10').style.display = 'block';
+	
+  document.getElementById('pregunta10').scrollIntoView({ behavior: 'smooth' });
 }
 
 function evaluarPregunta10() {
@@ -229,6 +248,8 @@ function evaluarPregunta10() {
     document.getElementById('q10').disabled = true;
     event.target.disabled = true;
     document.getElementById('pregunta11').style.display = 'block';
+	
+  document.getElementById('pregunta11').scrollIntoView({ behavior: 'smooth' });
 }
 
 function evaluarPregunta11() {
@@ -243,6 +264,8 @@ function evaluarPregunta11() {
     document.getElementById('q11').disabled = true;
     event.target.disabled = true;
     document.getElementById('pregunta12').style.display = 'block';
+	
+  document.getElementById('pregunta12').scrollIntoView({ behavior: 'smooth' });
 }
 
 function evaluarPregunta12() {
@@ -265,47 +288,13 @@ function evaluarPregunta12() {
     }
     event.target.disabled = true;
     document.getElementById('botones').style.display = 'block';
+	
+  document.getElementById('botones').scrollIntoView({ behavior: 'smooth' });
 }
 function mostrarTotalAcertadas() {
     const result = document.getElementById('totalAcertadas');
     result.textContent = `Total de respuestas correctas: ${totalAcertadas}`;
 }
-
-function reiniciarFormulario1() {
-    totalAcertadas = 0;
-    document.getElementById('result1').textContent = '';
-    document.getElementById('result2').textContent = '';
-    document.getElementById('result3').textContent = '';
-    document.getElementById('result4').textContent = '';
-    document.getElementById('totalAcertadas').textContent = '';
-    
-    document.getElementById('q1').disabled = false;
-    document.getElementById('q1').value = '';
-    document.querySelector('[onclick="evaluarPregunta1()"]').disabled = false;
-    
-    const q2Options = document.getElementsByName('q2');
-    for (const option of q2Options) {
-        option.disabled = false;
-        option.checked = false;
-    }
-    document.querySelector('[onclick="evaluarPregunta2()"]').disabled = false;
-    
-    document.getElementById('q3').disabled = false;
-    document.getElementById('q3').value = 'select';
-    document.querySelector('[onclick="evaluarPregunta3()"]').disabled = false;
-    
-    const q4Options = document.getElementsByName('q4');
-    for (const option of q4Options) {
-        option.disabled = false;
-        option.checked = false;
-    }
-    document.querySelector('[onclick="evaluarPregunta4()"]').disabled = false;
-    
-    document.getElementById('pregunta2').style.display = 'none';
-    document.getElementById('pregunta3').style.display = 'none';
-    document.getElementById('pregunta4').style.display = 'none';
-}
-
 
 function reiniciarFormulario() {
   totalAcertadas = 0;
@@ -346,6 +335,9 @@ function reiniciarFormulario() {
 
   document.getElementById('totalAcertadas').textContent = '';
   document.getElementById('botones').style.display = 'none';
+
+
+  // Hacer scroll al inicio de la página
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+
 }
-
-
