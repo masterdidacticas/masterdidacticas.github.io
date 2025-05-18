@@ -65,7 +65,7 @@ function evaluarPregunta1() {
 	document.getElementById('pregunta2').style.display = 'block';
 	
   // Hacer scroll hacia la siguiente pregunta
-  document.getElementById('pregunta2').scrollIntoView({ behavior: 'smooth' });
+  document.getElementById('pregunta2').scrollIntoView({ behavior: 'smooth',block: 'center' });
 
 }
 
@@ -95,7 +95,7 @@ function evaluarPregunta2() {
 
     document.getElementById('pregunta3').style.display = 'block';
 	
-  document.getElementById('pregunta3').scrollIntoView({ behavior: 'smooth' });
+  document.getElementById('pregunta3').scrollIntoView({ behavior: 'smooth' , block: 'center' });
 }
 
 function evaluarPregunta3() {
@@ -111,7 +111,7 @@ function evaluarPregunta3() {
     event.target.disabled = true;
     document.getElementById('pregunta4').style.display = 'block';
 	
-  document.getElementById('pregunta4').scrollIntoView({ behavior: 'smooth' });
+  document.getElementById('pregunta4').scrollIntoView({ behavior: 'smooth', block: 'center'  });
 }
 
 function evaluarPregunta4() {
@@ -136,7 +136,7 @@ function evaluarPregunta4() {
     event.target.disabled = true;
     document.getElementById('pregunta5').style.display = 'block';
 	
-  document.getElementById('pregunta5').scrollIntoView({ behavior: 'smooth' });
+  document.getElementById('pregunta5').scrollIntoView({ behavior: 'smooth', block: 'center'  });
 }
 
 
@@ -153,7 +153,7 @@ function evaluarPregunta5() {
     event.target.disabled = true;
     document.getElementById('pregunta6').style.display = 'block';
 	
-  document.getElementById('pregunta6').scrollIntoView({ behavior: 'smooth' });}
+  document.getElementById('pregunta6').scrollIntoView({ behavior: 'smooth', block: 'center'});}
 
 function evaluarPregunta6() {
     const answer = document.getElementById('q6').value;
@@ -168,7 +168,7 @@ function evaluarPregunta6() {
     event.target.disabled = true;
     document.getElementById('pregunta7').style.display = 'block';
 	
-  document.getElementById('pregunta7').scrollIntoView({ behavior: 'smooth' });
+  document.getElementById('pregunta7').scrollIntoView({ behavior: 'smooth', block: 'center'  });
 }
 
 function evaluarPregunta7() {
@@ -192,7 +192,7 @@ function evaluarPregunta7() {
     event.target.disabled = true;
     document.getElementById('pregunta8').style.display = 'block';
 	
-  document.getElementById('pregunta8').scrollIntoView({ behavior: 'smooth' });
+  document.getElementById('pregunta8').scrollIntoView({ behavior: 'smooth', block: 'center' });
 }
 
 function evaluarPregunta8() {
@@ -208,7 +208,7 @@ function evaluarPregunta8() {
     event.target.disabled = true;
     document.getElementById('pregunta9').style.display = 'block';
 	
-  document.getElementById('pregunta9').scrollIntoView({ behavior: 'smooth' });
+  document.getElementById('pregunta9').scrollIntoView({ behavior: 'smooth', block: 'center' });
 }
 
 function evaluarPregunta9() {
@@ -233,7 +233,7 @@ function evaluarPregunta9() {
     event.target.disabled = true;
     document.getElementById('pregunta10').style.display = 'block';
 	
-  document.getElementById('pregunta10').scrollIntoView({ behavior: 'smooth' });
+  document.getElementById('pregunta10').scrollIntoView({ behavior: 'smooth', block: 'center' });
 }
 
 function evaluarPregunta10() {
@@ -249,7 +249,7 @@ function evaluarPregunta10() {
     event.target.disabled = true;
     document.getElementById('pregunta11').style.display = 'block';
 	
-  document.getElementById('pregunta11').scrollIntoView({ behavior: 'smooth' });
+  document.getElementById('pregunta11').scrollIntoView({ behavior: 'smooth', block: 'center'  });
 }
 
 function evaluarPregunta11() {
@@ -265,7 +265,7 @@ function evaluarPregunta11() {
     event.target.disabled = true;
     document.getElementById('pregunta12').style.display = 'block';
 	
-  document.getElementById('pregunta12').scrollIntoView({ behavior: 'smooth' });
+  document.getElementById('pregunta12').scrollIntoView({ behavior: 'smooth', block: 'center' });
 }
 
 function evaluarPregunta12() {
@@ -289,7 +289,7 @@ function evaluarPregunta12() {
     event.target.disabled = true;
     document.getElementById('botones').style.display = 'block';
 	
-  document.getElementById('botones').scrollIntoView({ behavior: 'smooth' });
+  document.getElementById('botones').scrollIntoView({ behavior: 'smooth', block: 'center' });
 }
 function mostrarTotalAcertadas() {
     const result = document.getElementById('totalAcertadas');
